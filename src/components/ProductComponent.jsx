@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { createProduct, getProduct, updateProduct } from '../services/ProductService'
+import { createProduct, getProduct, updateProduct} from '../services/ProductService'
 import { useNavigate, useParams } from 'react-router-dom'
 
 
@@ -84,6 +84,7 @@ const ProductComponent = () => {
     }
   }
 
+  
   function validateForm(){
     let valid = true;
     const errorsCopy = {... errors}
@@ -147,27 +148,6 @@ const ProductComponent = () => {
           <div className='card-body'>
             <form>
 
-              {/* <div className='form-group mb-2'>
-                <label className='form-label'>Product Name</label>
-                <input
-                  type='text'
-                  placeholder='Enter Product name'
-                  name='productName'
-                  value={productName}
-                  className={`form-control ${errors.productName ? 'is-invalid': ' '}`}
-                  onChange={(e) => {
-                    if (e.target.value.length > 30) {
-                      setErrors({ ...errors, productName: 'You cannot add more than 30 characters' });
-                    } else {
-                      setErrors({ ...errors, productName: '' });
-                    }
-                    setProductName(e.target.value);
-                  }}
-                >
-                </input>
-                {errors.productName && <div className='invalid-feedback'>{errors.productName}</div>}
-              </div> */}
-
               <div className='form-group mb-2'>
                 <label className='form-label'>Product Name</label>
                 <input
@@ -194,9 +174,6 @@ const ProductComponent = () => {
                 </input>
                 {errors.productName && <div className='invalid-feedback'>{errors.productName}</div>}
               </div>
-
-
-
 
               <div className='form-group mb-2'>
                 <label className='form-label'>Product Quantity</label>
