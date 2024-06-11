@@ -79,7 +79,7 @@ const ListProductComponent = () => {
                             <td>{product.productName}</td>
                             <td>{product.quantity}</td>
                             <td>{product.unit}</td>
-                            <td>{product.price}</td>
+                            <td>{"\u20B9" + product.price}</td>
                             <td>{product.supplier}</td>
                             <td>{product.category}</td>
                             <td>
