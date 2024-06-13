@@ -52,7 +52,7 @@ const ListProductComponent = () => {
     <div className='container mt-4'>
         <h1 className='text-center'><u>Inventory List</u></h1>
         <button className='btn btn-primary mb-2' onClick = {addNewproduct}>Add Product</button>
-        <button className='btn btn-info mb-2 ms-2'>Total Expense: {totalExpense}</button>
+        <button className='btn btn-info mb-2 ms-2'>Total Expense: ₹{totalExpense}</button>
         <div className='back'>
         <table className='table table-striped table-bordered'>
             <thead>
